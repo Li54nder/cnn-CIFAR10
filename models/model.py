@@ -7,7 +7,7 @@ filter2 = 2*filter1
 
 
 def createModel(n_classes, input_shape, kernel_size=(3, 3), pool_size=(2, 2), padding='same'):
-    model = Sequential(name='AI for CIFAR-10')
+    model = Sequential(name='AI-CIFAR10')
 
     model.add(Conv2D(filter1, kernel_size, padding=padding, activation='relu', input_shape=input_shape, name='CONV11'))
     model.add(Conv2D(filter1, kernel_size, activation='relu', name='CONV12'))
